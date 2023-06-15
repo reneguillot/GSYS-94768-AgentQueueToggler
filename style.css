@@ -1,0 +1,143 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", -apple-system, "Segoe UI", "Helvetica Neue", Helvetica,
+    "Droid Sans", Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+
+.centered {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: #2a60c8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2a60c8;
+  text-decoration: underline;
+}
+
+.application-toolbar {
+  text-align: center;
+  padding: 25px;
+  color: #ff4f1f;
+}
+
+.application-toolbar .application-toolbar-title {
+  font-weight: 400;
+  font-size: 32px;
+  padding-left: 5px;
+  letter-spacing: -2px;
+}
+
+.application-pages {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.application-page {
+  padding: 10px;
+  background: white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+
+.loading-spinner {
+  height: 60px;
+  width: 60px;
+}
+
+.warning {
+  font-size: small;
+}
+
+.controls-table {
+  font-size: large;
+}
+
+.queue-status-table {
+  border: 1px solid #888;
+  font-size: small;
+  width: 96%;
+  margin: 12px;
+  opacity: .65;
+}
+
+.column-QueueName, .column-JoinedStatus {
+  text-align: left;
+  margin: 12px;
+}
+
+.column-MediaType {
+  text-align: left;
+  width: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
